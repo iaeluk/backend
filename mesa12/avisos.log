@@ -1,0 +1,290 @@
+[2021-10-27 09:22:25] [ INFO ] [Main:17] Opa! Chegamos no log!
+[2021-10-27 09:29:46] [ INFO ] [Main:17] Opa! Chegamos no log com uma info!
+[2021-10-27 09:29:46] [ WARN ] [Main:18] Opaaaaa é agora é warn
+[2021-10-27 09:29:46] [ ERROR] [Main:19] Opaaa, é com erro
+[2021-10-27 09:29:46] [ FATAL] [Main:21] Opa, agora é fatal mané!
+[2021-10-27 09:35:00] [ INFO ] [Main:17] Opa! Chegamos no log com uma info!
+[2021-10-27 09:35:00] [ WARN ] [Main:18] Opaaaaa é agora é warn
+[2021-10-27 09:35:00] [ ERROR] [Main:19] Opaaa, é com erro
+[2021-10-27 09:35:00] [ DEBUG] [Main:20] Talvez isso aqui seja um debug
+[2021-10-27 09:35:00] [ FATAL] [Main:22] Opa, agora é fatal mané!
+[2021-10-27 10:17:10] [ INFO ] [Main:35] Lista de numeros é menor que 5
+[2021-10-27 10:17:10] [ INFO ] [Main:38] A media é: 29.75
+[2021-10-27 10:24:14] [ INFO ] [Main:35] Lista de numeros é menor que 5
+[2021-10-27 10:24:14] [ INFO ] [Main:38] A media é: 29.75
+[2021-10-27 10:24:24] [ INFO ] [Main:31] Lista de numeros é menor que 5
+[2021-10-27 10:24:24] [ INFO ] [Main:34] A media é: NaN
+[2021-10-27 10:25:43] [ INFO ] [Main:35] Lista de numeros é menor que 5
+[2021-10-27 10:25:43] [ INFO ] [Main:40] A media é: 29.75
+[2021-10-27 10:25:51] [ ERROR] [Main:33] Lista está vazia
+[2021-10-27 10:25:51] [ INFO ] [Main:36] A media é: NaN
+[2021-10-27 10:27:09] [ INFO ] [Main:36] Lista de numero é maior que 5
+[2021-10-27 10:27:09] [ INFO ] [Main:44] A media é: 115.0
+[2021-10-28 09:39:30] [ INFO ] [Main:36] Lista de numero é maior que 5
+[2021-10-28 09:39:30] [ INFO ] [Main:44] A media é: 115.0
+[2021-10-29 09:00:06] [ INFO ] [Main:17] Chegou aqui
+[2021-10-29 09:31:18] [ INFO ] [Main:52] Chegou aqui
+[2021-10-29 09:31:32] [ INFO ] [Main:52] Chegou aqui
+[2021-10-29 09:34:42] [ INFO ] [Main:52] Chegou aqui
+[2021-10-29 09:37:58] [ INFO ] [Main:44] O usuario Felipe foi deletado
+[2021-10-29 09:37:58] [ INFO ] [Main:52] Chegou aqui
+[2021-10-29 09:45:02] [ WARN ] [Main:58] Usuario: Felipe Rosa
+[2021-10-29 09:45:02] [ WARN ] [Main:58] Usuario: Adryana Portugal
+[2021-10-29 09:45:02] [ WARN ] [Main:58] Usuario: Vinicius Mendes
+[2021-10-29 09:45:02] [ WARN ] [Main:58] Usuario: Adryana Portugal
+[2021-10-29 09:45:02] [ WARN ] [Main:58] Usuario: Vinicius Mendes
+[2021-10-29 09:45:02] [ INFO ] [Main:44] O usuario Felipe foi deletado
+[2021-10-29 09:45:21] [ WARN ] [Main:59] Usuario: Felipe Rosa
+[2021-10-29 09:45:21] [ WARN ] [Main:59] Usuario: Adryana Portugal
+[2021-10-29 09:45:21] [ WARN ] [Main:59] Usuario: Vinicius Mendes
+[2021-10-29 09:45:21] [ INFO ] [Main:43] O usuario Felipe foi deletado
+[2021-10-29 09:45:21] [ WARN ] [Main:59] Usuario: Adryana Portugal
+[2021-10-29 09:45:21] [ WARN ] [Main:59] Usuario: Vinicius Mendes
+[2021-10-29 10:04:57] [ ERROR] [MainMesa:49] org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE USUARIO (ID INT PRIMARY KEY, PRIMEIRO_NOME VARCHAR2 NOT NULL, SOBRENOME VARCHAR2 NOT NULL, IDADE INT NOT NULL, +[*] EMAIL VARCHAR2 NOT NULL)"; expected "identifier"; SQL statement:
+CREATE TABLE USUARIO (ID INT PRIMARY KEY, PRIMEIRO_NOME VARCHAR2 NOT NULL, SOBRENOME VARCHAR2 NOT NULL, IDADE INT NOT NULL, + EMAIL VARCHAR2 NOT NULL) [42001-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:243)
+	at org.h2.command.Parser.readColumnIdentifier(Parser.java:4530)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:7927)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:7832)
+	at org.h2.command.Parser.parseCreate(Parser.java:5818)
+	at org.h2.command.Parser.parsePrepared(Parser.java:846)
+	at org.h2.command.Parser.parse(Parser.java:788)
+	at org.h2.command.Parser.parse(Parser.java:760)
+	at org.h2.command.Parser.prepareCommand(Parser.java:683)
+	at org.h2.engine.Session.prepareLocal(Session.java:627)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:270)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2021-10-29 10:05:23] [ ERROR] [MainMesa:49] org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE) VALUES(1, 'Felipe', 'Rosa', FELIPE@[*]DH.COM) "; expected "., (, [, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE) VALUES(1, 'Felipe', 'Rosa', felipe@dh.com) [42001-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:243)
+	at org.h2.command.Parser.getSyntaxError(Parser.java:991)
+	at org.h2.command.Parser.read(Parser.java:4549)
+	at org.h2.command.Parser.readIfMore(Parser.java:1391)
+	at org.h2.command.Parser.parseValuesForCommand(Parser.java:1805)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1744)
+	at org.h2.command.Parser.parseInsert(Parser.java:1684)
+	at org.h2.command.Parser.parsePrepared(Parser.java:891)
+	at org.h2.command.Parser.parse(Parser.java:788)
+	at org.h2.command.Parser.parse(Parser.java:764)
+	at org.h2.command.Parser.prepareCommand(Parser.java:683)
+	at org.h2.engine.Session.prepareLocal(Session.java:627)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:270)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2021-10-29 10:06:06] [ ERROR] [MainMesa:49] org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'felipe@dh.com' (USUARIO: ""IDADE"" INT NOT NULL)"; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE) VALUES(1, 'Felipe', 'Rosa', 'felipe@dh.com') -- (1, 'Felipe', 'Rosa', 'felipe@dh.com') [22018-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:455)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.table.Column.convert(Column.java:204)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:164)
+	at org.h2.command.dml.Insert.update(Insert.java:132)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:267)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:398)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.h2.message.DbException: Data conversion error converting "felipe@dh.com" [22018-199]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.value.Value.convertTo(Value.java:829)
+	at org.h2.value.Value.convertTo(Value.java:735)
+	at org.h2.table.Column.convert(Column.java:199)
+	... 7 more
+Caused by: org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "felipe@dh.com" [22018-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:455)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 11 more
+Caused by: java.lang.NumberFormatException: For input string: "felipe@dh.com"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:668)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at org.h2.value.Value.convertToInt(Value.java:936)
+	at org.h2.value.Value.convertTo(Value.java:764)
+	... 9 more
+
+[2021-10-29 10:06:46] [ ERROR] [MainMesa:49] org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE) VALUES(1, 'Felipe', 'Rosa', 34, 'felipe@dh.com') [21002-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.dml.Insert.prepare(Insert.java:314)
+	at org.h2.command.Parser.prepareCommand(Parser.java:689)
+	at org.h2.engine.Session.prepareLocal(Session.java:627)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:270)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2021-10-29 10:07:41] [ ERROR] [MainMesa:49] org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE) VALUES(1, 'Felipe', 'Rosa', 34, 'felipe@dh.com') [21002-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.dml.Insert.prepare(Insert.java:314)
+	at org.h2.command.Parser.prepareCommand(Parser.java:689)
+	at org.h2.engine.Session.prepareLocal(Session.java:627)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:270)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2021-10-29 10:09:20] [ ERROR] [MainMesa:47] org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE) VALUES(1, 'Felipe', 'Rosa', 34, 'felipe@dh.com') [21002-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.dml.Insert.prepare(Insert.java:314)
+	at org.h2.command.Parser.prepareCommand(Parser.java:689)
+	at org.h2.engine.Session.prepareLocal(Session.java:627)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:270)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2021-10-29 10:09:46] [ ERROR] [MainMesa:47] org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE) VALUES(1, 'Felipe', 'Rosa', 34, 'felipe@dh.com') [21002-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.dml.Insert.prepare(Insert.java:314)
+	at org.h2.command.Parser.prepareCommand(Parser.java:689)
+	at org.h2.engine.Session.prepareLocal(Session.java:627)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:270)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2021-10-29 10:10:30] [ ERROR] [MainMesa:47] org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE) VALUES(1, 'Felipe', 'Rosa', 34, 'felipe@dh.com') [21002-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.dml.Insert.prepare(Insert.java:314)
+	at org.h2.command.Parser.prepareCommand(Parser.java:689)
+	at org.h2.engine.Session.prepareLocal(Session.java:627)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:270)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2021-10-29 10:10:46] [ ERROR] [MainMesa:47] org.h2.jdbc.JdbcSQLSyntaxErrorException: Column count does not match; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE) VALUES(1, 'Felipe', 'Rosa', 34, 'felipe@dh.com') [21002-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.dml.Insert.prepare(Insert.java:314)
+	at org.h2.command.Parser.prepareCommand(Parser.java:689)
+	at org.h2.engine.Session.prepareLocal(Session.java:627)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:270)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2021-10-29 10:11:11] [ ERROR] [MainMesa:47] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USUARIO(ID) [3, 'Vinicius', 'Mendes', 18, 'vinicius@dh.com']"; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE, EMAIL) VALUES(3, 'Matheus', 'Affonso', 34, 'matheus@dh.com') [23505-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:457)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:131)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:546)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:180)
+	at org.h2.command.dml.Insert.update(Insert.java:132)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:267)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:398)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2021-10-29 10:19:00] [ ERROR] [MainMesa:53] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USUARIO(ID) [3, 'Vinicius', 'Mendes', 18, 'vinicius@dh.com']"; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE, EMAIL) VALUES(3, 'Matheus', 'Affonso', 34, 'matheus@dh.com') [23505-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:457)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:131)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:546)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:180)
+	at org.h2.command.dml.Insert.update(Insert.java:132)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:267)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:398)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2021-10-29 10:26:36] [ ERROR] [MainMesa:53] org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USUARIO(ID) [3, 'Vinicius', 'Mendes', 18, 'vinicius@dh.com']"; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE, EMAIL) VALUES(3, 'Matheus', 'Affonso', 34, 'matheus@dh.com') [23505-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:457)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:131)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:546)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:180)
+	at org.h2.command.dml.Insert.update(Insert.java:132)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:267)
+	at org.h2.server.TcpServerThread.process(TcpServerThread.java:398)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:175)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+[2021-10-29 10:28:03] [ ERROR] [MainMesa:54] Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USUARIO(ID) [3, 'Vinicius', 'Mendes', 18, 'vinicius@dh.com']"; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE, EMAIL) VALUES(3, 'Matheus', 'Affonso', 34, 'matheus@dh.com') [23505-199]
+[2021-10-29 10:28:24] [ ERROR] [MainMesa:54] Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USUARIO(ID) [3, 'Vinicius', 'Mendes', 18, 'vinicius@dh.com']"; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE, EMAIL) VALUES(3, 'Matheus', 'Affonso', 34, 'matheus@dh.com') [23505-199]
+[2021-10-29 10:28:58] [ ERROR] [MainMesa:54] Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USUARIO(ID) [3, 'Vinicius', 'Mendes', 18, 'vinicius@dh.com']"; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE, EMAIL) VALUES(3, 'Matheus', 'Affonso', 34, 'matheus@dh.com') [23505-199]
+[2021-10-29 10:30:14] [ ERROR] [MainMesa:54] Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USUARIO(ID) [3, 'Vinicius', 'Mendes', 18, 'vinicius@dh.com']"; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE, EMAIL) VALUES(3, 'Matheus', 'Affonso', 34, 'matheus@dh.com') [23505-199]
+[2021-10-29 10:36:21] [ ERROR] [MainMesa:56] Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USUARIO(ID) [3, 'Vinicius', 'Mendes', 18, 'vinicius@dh.com']"; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE, EMAIL) VALUES(3, 'Matheus', 'Affonso', 34, 'matheus@dh.com') [23505-199]
+[2021-10-29 10:36:42] [ ERROR] [MainMesa:45] Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USUARIO(ID) [3, 'Vinicius', 'Mendes', 18, 'vinicius@dh.com']"; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE, EMAIL) VALUES(3, 'Matheus', 'Affonso', 34, 'matheus@dh.com') [23505-199]
+[2021-10-29 10:36:42] [ ERROR] [MainMesa:56] Column count does not match; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE) VALUES(4, 'Matheus', 'Andrade', 34, 'andrade@dh.com') [21002-199]
+[2021-10-29 10:37:38] [ ERROR] [MainMesa:46] Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USUARIO(ID) [3, 'Vinicius', 'Mendes', 18, 'vinicius@dh.com']"; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE, EMAIL) VALUES(3, 'Matheus', 'Affonso', 34, 'matheus@dh.com') [23505-199]
+[2021-10-29 10:37:38] [ ERROR] [MainMesa:58] Column count does not match; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE) VALUES(4, 'Matheus', 'Andrade', 34, 'andrade@dh.com') [21002-199]
+[2021-10-29 10:41:36] [ ERROR] [MainMesa:46] Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USUARIO(ID) [3, 'Vinicius', 'Mendes', 18, 'vinicius@dh.com']"; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE, EMAIL) VALUES(3, 'Matheus', 'Affonso', 34, 'matheus@dh.com') [23505-199]
+[2021-10-29 10:41:36] [ ERROR] [MainMesa:58] Column count does not match; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE) VALUES(4, 'Matheus', 'Andrade', 34, 'andrade@dh.com') [21002-199]
+[2021-10-29 10:41:58] [ ERROR] [MainMesa:46] Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USUARIO(ID) [3, 'Vinicius', 'Mendes', 18, 'vinicius@dh.com']"; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE, EMAIL) VALUES(3, 'Matheus', 'Affonso', 34, 'matheus@dh.com') [23505-199]
+[2021-10-29 10:41:58] [ ERROR] [MainMesa:58] Data conversion error converting "Andrade"; SQL statement:
+UPDATE USUARIO SET IDADE = 30 WHERE ID = 'Andrade' [22018-199]
+[2021-10-29 10:42:11] [ ERROR] [MainMesa:46] Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USUARIO(ID) [3, 'Vinicius', 'Mendes', 18, 'vinicius@dh.com']"; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE, EMAIL) VALUES(3, 'Matheus', 'Affonso', 34, 'matheus@dh.com') [23505-199]
+[2021-10-29 10:42:11] [ ERROR] [MainMesa:58] Column "USUARIO" not found; SQL statement:
+UPDATE USUARIO SET IDADE = 30 WHERE USUARIO = 'Andrade' [42122-199]
+[2021-10-29 10:42:22] [ ERROR] [MainMesa:46] Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USUARIO(ID) [3, 'Vinicius', 'Mendes', 18, 'vinicius@dh.com']"; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE, EMAIL) VALUES(3, 'Matheus', 'Affonso', 34, 'matheus@dh.com') [23505-199]
+[2021-10-29 10:42:22] [ ERROR] [MainMesa:58] Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+UPDATE USUARIO SET IDADE = 30 WHERE SOBRENOME = 'Andrade' [90002-199]
+[2021-11-01 12:10:37] [ ERROR] [MainMesa:46] Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USUARIO(ID) [3, 'Vinicius', 'Mendes', 18, 'vinicius@dh.com']"; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE, EMAIL) VALUES(3, 'Matheus', 'Affonso', 34, 'matheus@dh.com') [23505-199]
+[2021-11-01 12:17:05] [ ERROR] [MainMesa:46] Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.USUARIO(ID) [3, 'Vinicius', 'Mendes', 18, 'vinicius@dh.com']"; SQL statement:
+INSERT INTO USUARIO(ID, PRIMEIRO_NOME, SOBRENOME, IDADE, EMAIL) VALUES(3, 'Matheus', 'Affonso', 34, 'matheus@dh.com') [23505-199]
+[2021-11-01 12:17:05] [ INFO ] [MainMesa:76] ID: 1 Nome: Felipe Sobrenome: Rosa Idade: 34 E-mail: felipe@dh.com
+[2021-11-01 12:17:05] [ INFO ] [MainMesa:76] ID: 2 Nome: Adryana Sobrenome: Portugal Idade: 21 E-mail: adryana@dh.com
+[2021-11-01 12:17:05] [ INFO ] [MainMesa:76] ID: 3 Nome: Vinicius Sobrenome: Mendes Idade: 18 E-mail: vinicius@dh.com
+[2021-11-01 12:17:05] [ INFO ] [MainMesa:76] ID: 4 Nome: Matheus Sobrenome: Andrade Idade: 34 E-mail: andrade@dh.com
+[2021-11-01 12:17:05] [ DEBUG] [MainMesa:54] O usuario: Matheus foi atualizado!
+[2021-11-01 12:17:05] [ INFO ] [MainMesa:58] Deleted the movie with id=1
+[2021-11-01 12:17:05] [ INFO ] [MainMesa:60] O usuario Vinicius Mendes foi deletado
+[2021-11-01 12:17:05] [ INFO ] [MainMesa:76] ID: 2 Nome: Adryana Sobrenome: Portugal Idade: 21 E-mail: adryana@dh.com
+[2021-11-01 12:17:05] [ INFO ] [MainMesa:76] ID: 4 Nome: Matheus Sobrenome: Andrade Idade: 30 E-mail: andrade@dh.com
